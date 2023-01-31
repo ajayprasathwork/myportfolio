@@ -1,0 +1,64 @@
+.hero{
+    display: flex;
+    position: relative;
+    height:100vh;
+    width: 100%;
+}
+.herosection{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.herosection h1{
+    font-size: 30px;
+}
+
+.herosection  span{
+    color: red;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1,p{
+    padding: 10px;
+}
+.intro button{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: black
+}
+.sendicon{
+    padding-left: 10px;
+}
+.photo{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+    border-radius:30% 70% 67% 33% / 30% 30% 70% 70% ;
+    box-shadow: 8px 0px 0px 0px rgba(0,0,0,0.3);       
+
+}
+
+.scroll-ind{
+    font-size: 12px;
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+}
+.blackicon{
+    color: black;
+}
