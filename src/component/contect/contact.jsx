@@ -47,12 +47,10 @@ const contact = () => {
                     <Fade right>
                      <input placeholder='Insert your email'  type={"text"}/>
                     </Fade>
-                    <Fade right>
-                     <input placeholder='Write your project' type={"text"}/>
-                     </Fade>
+                   
                      <Fade right>
 
-                    <textarea  rows="4" cols="50">Write your project</textarea>
+                    <textarea  rows="4" cols="50" placeholder='Write your project'></textarea>
                     </Fade>
                     <Fade right>
                         
