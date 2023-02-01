@@ -8,7 +8,32 @@
 html{
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 1px;
+}
 .App {
   display: flex;
   flex-direction: column;
+}
+input[type='text']{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #CBCBCB;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  
+}
+textarea{
+  height: 100px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #CBCBCB;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+input:focus{
+  outline: none;
 }
