@@ -35,6 +35,8 @@ textarea{
   padding: 5px;
   margin-top: 10px;
 }
-input:focus{
+textarea:focus,input:focus{
   outline: none;
+  border: 1px solid red;
+
 }

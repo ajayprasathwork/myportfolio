@@ -1,7 +1,7 @@
 .about{
     display: flex;
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     flex-direction: column;
     margin-bottom: 30px;
 }
@@ -93,6 +93,9 @@
         border-radius: 5px;
         margin-top: 10px;
         margin-right: 20px;
+    }
+    .aboutsection p{
+        text-align: center;
     }
 
 }
