@@ -23,6 +23,10 @@
     font-weight: bold;
 }
 
+.navitems a:hover{
+    color:red ;
+}
+
 @media screen and (max-width: 600px) {
     .navitems{
         display: none;

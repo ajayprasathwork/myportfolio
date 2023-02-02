@@ -1,7 +1,7 @@
 .about{
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     flex-direction: column;
     margin-bottom: 30px;
 }
@@ -65,4 +65,34 @@
 }
 .about-img{
     border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .imagesection{
+        display: none;
+    }
+    .aboutsection{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutme-card{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .aboutme-box{
+        display: flex;
+        width: 80%;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #DDDDDD ;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
 }
