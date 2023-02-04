@@ -14,15 +14,16 @@ const Nav = () => {
     }
     window.addEventListener('scroll',navColor)
 
+    
     const NaviTems=()=>{
         return(
             <>
-            <a href="https://www.w3schools.com/">Home</a>
-             <a href="https://www.w3schools.com/">About</a>
+            <a  href="/#hero">Home</a>
+             <a href="/#about">About</a>
              <a href="https://www.w3schools.com/">Service</a>
-             <a href="https://www.w3schools.com/">Skills</a>
+             <a href="/#skills">Skills</a>
              <a href="https://www.w3schools.com/">Blog</a>
-             <a href="https://www.w3schools.com/">Contact</a>
+             <a href="/#contact">Contact</a>
             </>
         )
     }
@@ -42,9 +43,7 @@ const Nav = () => {
              {showMobileMenu?<div className= {changecolor?'mobile-menu-continer-black':'mobile-menu-continer-light'}>
              <NaviTems/>
              </div>:null}
-
-
-        </div>
+            </div>
     );
 };
 

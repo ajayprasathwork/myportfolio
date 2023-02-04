@@ -13,7 +13,7 @@ function App() {
        </section>
        <section id="about">
        <About/>
-       <section className='skills'>
+       <section id='skills'>
         <Skills/>
        </section>
        </section>
