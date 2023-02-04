@@ -77,7 +77,7 @@ img{
     color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
 .hero{
     margin-top: 70px;
     height: auto;

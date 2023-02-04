@@ -26,7 +26,7 @@ const about = () => {
                 <p className='withme'>1 + years</p>
                 </div>
                 <div className='aboutme-box'>
-                <i class="fa fa-envelope contact-icon"></i>
+                <i class="fa fa-check contact-icon"></i>
                 <p className='contact-text'>Completed</p>
                 <p className='withme'>10 + projects</p>
                 </div>
