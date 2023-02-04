@@ -19,10 +19,11 @@
     align-items: center;
     justify-content:center;
     flex-direction: column;
-    background-color: #f0f0f0;
+    background-color: #FAFAFA;
     padding: 30px;
     margin-left: 10px;
     border-radius: 5px;
+
 }
 .box-icon{
     font-size: 70px;

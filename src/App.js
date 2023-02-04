@@ -4,6 +4,8 @@ import Hero from './component/hero/hero.jsx';
 import Contact from './component/contect/contact.jsx';
 import About from './component/about/about.jsx';
 import Skills from './component/skills/skills.jsx';
+import Footer from './component/footer/footer.jsx';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,9 @@ function App() {
        </section>
        <section id="contact">
        <Contact/>
+       </section>
+       <section id="footer">
+       <Footer/>
        </section>
     </div>
   );
