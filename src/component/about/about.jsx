@@ -2,6 +2,8 @@ import React from 'react';
 import './about.css'
 import heroimg from '../../img/hero.jpg'
 import Fade from 'react-reveal/Fade';
+import {FaMedal} from "react-icons/fa";
+
 const about = () => {
     return (
         <div className='about'>
@@ -21,7 +23,7 @@ const about = () => {
                 <div className='aboutsection'>
                 <div className='aboutme-card'>
                 <div className='aboutme-box'>
-                <i class="fa fa-envelope contact-icon"></i>
+                    <FaMedal className="contact-icon"/>
                 <p className='contact-text'>Experience</p>
                 <p className='withme'>1 + years</p>
                 </div>

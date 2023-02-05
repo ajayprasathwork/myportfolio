@@ -3,7 +3,7 @@ import './skills.css'
 import Fade from 'react-reveal/Fade';
 import { AiFillHtml5,AiFillGithub } from "react-icons/ai";
 import {IoLogoCss3,IoLogoJavascript} from "react-icons/io";
-import {DiReact,DiJava,DiVisualstudio} from "react-icons/di";
+import {DiReact,DiJava,DiVisualstudio,DiAngularSimple} from "react-icons/di";
 import {TbBrandReactNative} from "react-icons/tb";
 
 const skills = () => {
@@ -19,15 +19,15 @@ const skills = () => {
                   <AiFillHtml5 className='box-icon htmlcolor'/>
                 </div>
                 <div className='box item-2'>
-                <IoLogoCss3 className='box-icon'/>
+                <IoLogoCss3 className='box-icon css'/>
 
                 </div>
                 <div className='box item-3'>
-                <IoLogoJavascript className='box-icon htmlcolor'/>
+                <IoLogoJavascript className='box-icon js'/>
 
                 </div>
                 <div className='box item-4'>
-                <DiReact className='box-icon htmlcolor'/>
+                <DiReact className='box-icon react'/>
 
                 </div>
                 </Fade>
@@ -37,19 +37,19 @@ const skills = () => {
             <Fade right>
 
                 <div className='box item-1'>
-                <DiJava className='box-icon htmlcolor'/>
+                <DiJava className='box-icon java'/>
                 </div>
                 <div className='box item-2'>
-                <AiFillHtml5 className='box-icon htmlcolor'/>
+                <DiAngularSimple className='box-icon ag'/>
                 </div>
                 <div className='box item-3'>
-                <TbBrandReactNative className='box-icon htmlcolor'/>
+                <TbBrandReactNative className='box-icon react'/>
                 </div>
                 <div className='box item-4'>
-                <AiFillGithub className='box-icon htmlcolor'/>
+                <AiFillGithub className='box-icon github'/>
                 </div>
                 <div className='box item-5'>
-                <DiVisualstudio className='box-icon htmlcolor'/>
+                <DiVisualstudio className='box-icon vs'/>
                 </div>
                 </Fade>
 
