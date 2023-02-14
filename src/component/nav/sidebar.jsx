@@ -9,7 +9,7 @@ const Sidebar = () => {
     const NaviTems=()=>{
         return(
             <>
-             <a href="/home"> <AiFillHome className='nav-icon'/>Home</a>
+             <a href="/"> <AiFillHome className='nav-icon'/>Home</a>
              <a href="/Grades"> <HiAcademicCap className='nav-icon'/>Grades</a>
              <a href="/Calendar"> <AiFillCalendar className='nav-icon'/>Calendar</a>
              <a href="/weeklyview"> <MdViewArray className='nav-icon'/>Weekly View</a>

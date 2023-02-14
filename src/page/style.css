@@ -2,7 +2,33 @@
     display: flex;
     width: 100%;
     margin-top: 50px;
-    height: 100px;
     padding: 10px;
-    background-color: aquamarine;
+    flex-direction: row;
+}
+.page-titel{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.main-box{
+    flex: 70%;
+
+}
+
+.side-box{
+    flex: 30%;
+
+
+}
+.table-fooder{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.paymenthistory{
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #fff;
 }

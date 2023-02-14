@@ -3,6 +3,8 @@ import Header from './component/nav/nav.jsx';
 import Sidebar from './component/nav/sidebar.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './page/home';
+import Fees from './page/fees';
+
 function App() {
   return (
     <div className="App">
@@ -11,12 +13,11 @@ function App() {
         <Header/>
         <BrowserRouter>
       <Routes>
-          <Route path="home" element={<Home />}>
-          {/* <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/fees" element={<Fees />}></Route>
+          {/* <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} /> */}
-        </Route>
       </Routes>
     </BrowserRouter>
       </div>
