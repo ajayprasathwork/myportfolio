@@ -11,24 +11,85 @@
 }
 
 .main-box{
-    flex: 70%;
+    flex: 64%;
 
 }
 
 .side-box{
-    flex: 30%;
+    flex: 35%;
 
 
 }
+.stu-details{
+    display: flex;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 0px 5px 0px 5px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.88);
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.stu-details p span{
+    font-size: 16px;
+    font-weight:bold
+}
+
 .table-fooder{
     display: flex;
     width: 100%;
-    height: 100px;
-    background-color: #fff;
+
+    flex-direction: column;
 }
 
 .paymenthistory{
-    margin-top: 30px;
+    margin-top: 34px;
     margin-left: 10px;
     background-color: #fff;
+}
+
+.hi-list-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px 0px 5px;
+}
+
+.hi-list-header .titel{
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 16px;
+    font-weight:bold
+}
+.viewall{
+    color: rgb(26, 33, 252);
+    font-size: 10px;
+}
+
+.pay-list-card{
+    display: flex;
+    flex-direction: row;
+}
+.table-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.tb-titel{
+    font-size: 16px;
+    color: #000;
+}
+.due-date{
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.total{
+    font-size: 18px;
+    font-weight: bold;
+}
+.pay-continer{
+    margin-top: 25px;
 }
