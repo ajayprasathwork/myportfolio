@@ -11,11 +11,16 @@ function Login(props){
     const [erros,setErrors]=useState({})
 
     const handleSubmit = (event) => {
-        props.gohome()
         event.preventDefault();
         const newErrors=formValidation(formData)
         console.log(newErrors)
         setErrors(newErrors)
+        if(formData.email&&formData.password){
+            console.log("no err")
+
+            props.gohome()
+
+        }
       }
 
       const valueChang=(e)=>{

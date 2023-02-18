@@ -8,7 +8,7 @@
     flex-direction: row;
     background-color: #fff;
     padding: 0px 10px 0px 0px;
-   z-index: 1;
+   z-index: 3;
 }
 .nav input[type='text']{
     height: 100%;
@@ -74,7 +74,7 @@
 
              
 .nav-link .nav-icon{
-    color: #afaeae;
+    color: #000;
 
    margin-right: 10px;
 }
@@ -90,6 +90,14 @@
     display: flex;
     width: 30%;
     height: 80%;
+    position: relative;
+}
+.ser-icon{
+    color: #157AFE;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    right: 10px;
 }
 
 .user{

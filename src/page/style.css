@@ -344,7 +344,7 @@
   display: flex;
   align-items: center;
   height: 50px;
-  border-bottom: 1px solid #838485;
+  border-bottom: 1px solid #eceded;
 }
 
 .e-icon{
@@ -392,4 +392,21 @@
   font-size: 13px;
   color: #838485;
 }
+
+.h-day{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  margin-right: 10px;
+}
+
+.exam-tb{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
   

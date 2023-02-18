@@ -8,6 +8,7 @@ import Home from './page/home';
 import Fees from './page/fees';
 import Login from './page/login';
 import Message from './page/massage';
+import Calender from './page/calender';
 
 function App() {
   const [islogin,setislogin]=useState(false)
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/fees" element={<Fees />}></Route>
           <Route exact path="/messagecenter" element={<Message />}></Route>
+          <Route exact path="/calender" element={<Calender />}></Route>
 
          
       </Routes>
