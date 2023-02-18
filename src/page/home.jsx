@@ -2,6 +2,10 @@ import React,{useState} from 'react';
 import './style.css'
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Sector } from 'recharts';
+import { BsFillCalendarEventFill } from 'react-icons/bs';
+import { IoIosArrowBack,IoIosArrowForward } from 'react-icons/io';
+import { GoPrimitiveDot } from 'react-icons/go';
+
 
 import { Button, Table, Alert, List, Dropdown, Calendar, Row,Space,Tag } from 'antd';
 const Home = () => {
@@ -165,6 +169,25 @@ const Home = () => {
     { name: 'Group C', value: 30 },
     { name: 'Group D', value: 10 },
   ];
+
+  const event=[
+    {
+     titel:"Library book return",
+     date:"02 january 2023",
+     time:"10:00 AM",
+     venu:"Library",
+  }, {
+    titel:"Seminar",
+    date:"13 january 2023",
+    time:"11:15 AM",
+    venu:"Arts Auditorium,k Block",
+ }, {
+  titel:"Library book return",
+  date:"02 january 2023",
+  time:"10:00 AM",
+  venu:"Library",
+},
+]
  
   return (
     <div className='page'>
@@ -256,6 +279,27 @@ const Home = () => {
             </List.Item>
           )}
         />
+        <div className='event-card'>
+          <div className='header'>
+            <BsFillCalendarEventFill className='e-icon'/>
+            <h4>Event</h4>
+            <div className='ev-date'><IoIosArrowBack className='ev-arrow'/><p>3 January 2023<span>monday</span></p><IoIosArrowForward className='ev-arrow'/></div>
+          </div>
+          {event.map((item)=>{
+            return(
+              <div className='event-list-card'>
+                <GoPrimitiveDot className='icon'/>
+                <div>
+                <h4>{item.titel}</h4> 
+                <p>{item.date}</p> 
+                <p>{item.time}</p> 
+                <p>Venue:{item.venu}</p> 
+                </div>
+                
+                </div>
+            )
+          })}
+        </div>
        
       </div>
 

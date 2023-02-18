@@ -20,6 +20,13 @@
 
 
 }
+.msg-side-box{
+    flex: 35%;
+    margin-top:33px;
+    margin-left: 10px;
+
+
+}
 .stu-details{
     display: flex;
     height: 60px;
@@ -265,6 +272,124 @@
   .tab-list-continer{
     padding: 5px;
   }
+
+  .msg-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px 10px 0px;
+  }
+  .avt{
+    display: flex;
+    width: 4%;
+    background-color: #3b5998;
+  }
+
+  .msg-list-titel{
+    margin-left: 5px;
+    width: 76%;
+    align-items: center;
+    color: #157AFE;
+    font-size: 16px;
   
+  }
+  .msg-list-data{
+    text-align: end;
+    width: 20%;
+    font-size: 10px;
+  }
+
+  .msg-list-titel span{
+    font-weight: normal;
+    margin-left: 6px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+  }
   
+  .contact-items{
+    display: flex;
+   flex: 100%;
+   flex-direction: column;
+   align-items: center;
+   background-color: #fff;
+}
+
+.contactfrom{
+    display: flex;
+    width: 90%;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactfrom button{
+    border: none;
+    width: auto;
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-color:  #1677ff
+}
+
+
+.event-card{
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+.event-card .header{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #838485;
+}
+
+.e-icon{
+  color: #157AFE;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ev-date{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+.ev-arrow{
+  color: #838485;
+}
+
+.ev-date p span{
+  margin-left: 5px;
+  padding: 0px 2px 0px 4px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #157AFE;
+}
+
+.event-list-card{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.event-list-card .icon{
+  margin-top: 3px;
+  color: #157AFE;
+}
+
+.event-list-card h4{
+  border-bottom: 0.5px solid #157AFE;
+}
+
+.event-list-card p{
+  font-size: 13px;
+  color: #838485;
+}
   

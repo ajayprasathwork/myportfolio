@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Table, Alert, List, Dropdown, Calendar, Row, Space, Tabs } from 'antd';
+import { Button, Table, Alert, List, Dropdown, Calendar, Row, Space, Avatar,Tabs } from 'antd';
 import './style.css'
 
 const Message = () => {
@@ -9,42 +9,107 @@ const Message = () => {
    
     const data = [
         {
-            key: '1',
-            Topic: 'English-Agreement of the Subject with the verb',
-            RoomNo: "32-B",
-            Time: "11:30 am",
-            Teacher: 'Mr.Ajay prasath',
+            title: "Picture Day Reminder",
+            body: "Tomorrow is school picture day! Please remember to dress nicely and bring your best smile.",
+            date: "07/02/2023",
+
+        
         },
         {
-            key: '2',
-            Topic: 'Mathematics-Powers of imaginary unit',
-            RoomNo: "02-4",
-            Time: "12:30 pm",
-            Teacher: 'Mr.prasath',
+            title: "Parent-Teacher Conferences Reminder",
+            body: "Just a friendly reminder that parent-teacher conferences are scheduled for next week. Please make sure to sign up for a time slot if you haven't already done so.",
+            date: "07/02/2023",
+
         },
         {
-            key: '3',
-            Topic: 'Physics-Basic properties of magnets',
-            RoomNo: "32-B",
-            Time: "1:30 pm",
-            Teacher: 'Mr.Elsin',
+            title: "School Fundraiser Event",
+             body: "Our school is hosting a fundraising event next week to support a local charity. Please come out and show your support!",
+             date: "07/02/2023",
+
         },
         {
-            key: '4',
-            Topic: 'Chemistry-Occurrence of metals',
-            RoomNo: "1-d",
-            Time: "2:30 pm",
-            Teacher: 'Mr.Arun Kumar',
+            title: "School Play Announcement",
+            body: "Our school's drama club will be performing 'The Wizard of Oz' next month. Don't miss out on this amazing production!",
+            date: "07/02/2023",
+
+        },
+
+        {
+            title: "Reminder: Math Exam Tomorrow",
+            body: "Just a reminder that your math exam is tomorrow. Make sure to get plenty of rest and review your notes before the exam.",
+            date: "07/02/2023",
+
         },
         {
-            key: '5',
-            Topic: 'Commerce-Meaning and Types of Organization',
-            RoomNo: "12-B",
-            Time: "3:30 pm",
-            Teacher: 'Mr.Elsin',
+            title: "Picture Day Reminder",
+            body: "Tomorrow is school picture day! Please remember to dress nicely and bring your best smile.",
+            date: "07/02/2023",
+
+        
+        },
+        {
+            title: "Parent-Teacher Conferences Reminder",
+            body: "Just a friendly reminder that parent-teacher conferences are scheduled for next week. Please make sure to sign up for a time slot if you haven't already done so.",
+            date: "07/02/2023",
+
+        },
+        {
+            title: "School Fundraiser Event",
+             body: "Our school is hosting a fundraising event next week to support a local charity. Please come out and show your support!",
+             date: "07/02/2023",
+
+        },
+        {
+            title: "School Play Announcement",
+            body: "Our school's drama club will be performing 'The Wizard of Oz' next month. Don't miss out on this amazing production!",
+            date: "07/02/2023",
+
+        },
+
+        {
+            title: "Reminder: Math Exam Tomorrow",
+            body: "Just a reminder that your math exam is tomorrow. Make sure to get plenty of rest and review your notes before the exam.",
+            date: "07/02/2023",
+
+        }, {
+            title: "Picture Day Reminder",
+            body: "Tomorrow is school picture day! Please remember to dress nicely and bring your best smile.",
+            date: "07/02/2023",
+
+        
+        },
+        {
+            title: "Parent-Teacher Conferences Reminder",
+            body: "Just a friendly reminder that parent-teacher conferences are scheduled for next week. Please make sure to sign up for a time slot if you haven't already done so.",
+            date: "07/02/2023",
+
+        },
+        {
+            title: "School Fundraiser Event",
+             body: "Our school is hosting a fundraising event next week to support a local charity. Please come out and show your support!",
+             date: "07/02/2023",
+
+        },
+        {
+            title: "School Play Announcement",
+            body: "Our school's drama club will be performing 'The Wizard of Oz' next month. Don't miss out on this amazing production!",
+            date: "2023-02-19",
+
+        },
+
+        {
+            title: "Reminder: Math Exam Tomorrow",
+            body: "Just a reminder that your math exam is tomorrow. Make sure to get plenty of rest and review your notes before the exam.",
+            date: "2023-02-19",
+
         },
 
     ];
+
+    const getRandomColor=() =>{
+       let color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+        return color;
+      }
 
 
     const TabList=()=>{
@@ -52,7 +117,12 @@ const Message = () => {
             <div className='tab-list-continer'>
                  {data.map((item)=>{
                return(
-             <div>{item.Topic}</div>
+                   <div className='msg-list'>
+                       <Avatar className='avt' style={{ backgroundColor: getRandomColor(), color: '#fff' }}>{item.title[0]}</Avatar>
+                       <p className='msg-list-titel'>{item.title}<span>-{item.body}</span></p>
+                       <p className='msg-list-data'>{item.date}</p>
+
+                    </div>
                )
              })}
             </div>
@@ -87,13 +157,18 @@ const Message = () => {
                     },
                     {
                         label: 'Index',
-                        children: 'Content of Tab 2',
+                        children: <TabList/>,
                         key: '2',
                     },
                     {
-                        label: 'Announcements',
-                        children: 'Content of Tab 1',
+                        label: 'Send',
+                        children: <TabList/>,
                         key: '3',
+                    },
+                    {
+                        label: 'Announcements',
+                        children: <TabList/>,
+                        key: '4',
                     },
                 ]}
                     
@@ -103,7 +178,40 @@ const Message = () => {
 
 
             </div>
-            <div className='side-box'>
+            <div className='msg-side-box'>
+            <div className='contact-items'>
+                <h4>Compose</h4>
+                <div className='contactfrom'>
+                    <input disabled className='custom-input' placeholder='' value={"ajay prasath"} type={"text"}/>
+                     <input className='custom-input' placeholder='Subject'  type={"text"}/>
+                   
+                     <select className='custom-input'
+        id="department"
+        required
+      >
+        <option value="">Select a department</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Biology">Biology</option>
+      </select>
+      <select className='custom-input'
+        id="department"
+        required
+      >
+        <option value="">Select a Issue Type</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Biology">Biology</option>
+      </select>
+                    <textarea className='custom-input'  rows="10" cols="100" placeholder='write about issue ......'></textarea>
+                        
+                                            <button>Send Message</button>
+
+
+
+                </div>
+
+            </div>
             </div>
 
 
