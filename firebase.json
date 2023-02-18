@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "puild",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
