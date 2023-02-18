@@ -1,7 +1,37 @@
 import React from 'react';
 import './style.css'
-import { Button, Table, Alert, List, Checkbox, Col, Row } from 'antd';
+import { DownOutlined, UserOutlined } from '@ant-design/icons';
+
+import { Button, Table, Alert, List, Dropdown, message, Row } from 'antd';
 const Fees = () => {
+  const items = [
+    {
+      label: 'Credit Card',
+      key: '1',
+      icon: <UserOutlined />,
+    },
+    {
+      label: 'Debit Card',
+      key: '2',
+      icon: <UserOutlined />,
+    },
+    {
+      label: 'Net Banking',
+      key: '3',
+      icon: <UserOutlined />,
+    },
+    {
+      label: 'UPI',
+      key: '4',
+      icon: <UserOutlined />,
+    },
+  ];
+  const handleButtonClick = (e) => {
+    console.log('click left button', e);
+  };
+  const handleMenuClick = (e) => {
+    console.log('click', e);
+  };
   const onChange = (checkedValues) => {
     console.log('checked = ', checkedValues);
   };
@@ -46,6 +76,11 @@ const Fees = () => {
     'Los Angeles battles huge wildfires.',
   ];
 
+  const menuProps = {
+    items,
+    onClick: handleMenuClick,
+  };
+
   return (
     <div className='page'>
       <div className='main-box'>
@@ -67,21 +102,9 @@ const Fees = () => {
               <p className='total'>6600</p>
             </div>
             <div className='table-header pay-continer'>
-              <Checkbox.Group
-                style={{
-                  width: '100%',
-                }}
-                onChange={onChange}
-              >
-                    <Checkbox value="A">A</Checkbox>
-                    <Checkbox value="A">A</Checkbox>
-                    <Checkbox value="A">A</Checkbox>
-                    <Checkbox value="A">A</Checkbox>
-                    <Checkbox value="A">A</Checkbox>
-                    <Checkbox value="A">A</Checkbox>
-                    <Checkbox value="A">A</Checkbox>
-
-              </Checkbox.Group>             
+            <Dropdown.Button menu={menuProps} onClick={handleButtonClick}>
+      Payment through
+    </Dropdown.Button>
               <Button type="primary">Pay Now</Button>
             </div>
           </div>} />
@@ -96,12 +119,12 @@ const Fees = () => {
           renderItem={(item) => (
             <List.Item key={item}>
               <List.Item.Meta
-                title={<a href="https://ant.design">{item}</a>}
-                description={"pone"}
+                title={<a style={{fontWeight:"normal"}} href="https://ant.design">{"$6600-"+"Spacial fee"}</a>}
+                description={<p>12-02-2023:2:30 am</p>}
 
               />
               <div>
-                <Alert className='due-date' message="Padid" type="success" showIcon />
+                <Alert className='due-date' message="Successfull" type="success" showIcon />
 
               </div>
 

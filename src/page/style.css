@@ -50,6 +50,12 @@
     background-color: #fff;
 }
 
+.normalcard{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
 .hi-list-header{
     display: flex;
     align-items: center;
@@ -60,7 +66,6 @@
 .hi-list-header .titel{
     color: rgba(0, 0, 0, 0.88);
     font-size: 16px;
-    font-weight:bold
 }
 .viewall{
     color: rgb(26, 33, 252);
@@ -93,3 +98,173 @@
 .pay-continer{
     margin-top: 25px;
 }
+/* login */
+.custom-input{
+    background-color: #f5f5f5;
+    padding: 12px 10px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #d4d5d5;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline:none ;
+  }
+  .custom-input-error{
+    background-color: #f5f5f5;
+    padding: 12px 10px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ed2d2d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline:none ;
+  }
+  .custom-input:focus{
+    border: 2px solid #157AFE;
+  
+  }
+  .custom-input-error:focus{
+    border: 2px solid #ed2d2d;
+  
+  }
+  
+  .custom-button{
+    background-color:#157AFE;
+    padding: 12px 20px;
+    width: 100%;
+    margin: 8px 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border: none;
+  
+  }
+  .formerror{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    font-size: small;
+    color: #ed2d2d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .card-titel{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  .forgetpassword{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: #838485;
+  }
+  .Remamber{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    font-size: small;
+    accent-color: #157AFE;
+  
+  }
+  .Remamber input{
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+  .icons{
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .googel{
+    color: #ea4335;
+  }
+  .facebook{
+    color: #3b5998;
+  }
+  .apple{
+    color:#000000
+  }
+  .login{
+    display: flex;
+    height: 100vh;
+   
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+    background-image:url('../img/logbg.png');
+  }
+  
+  .login-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 40%;
+    /* height: 70%; */
+    border-radius: 5px;
+    padding: 30px 10px 30px 10px;
+  }
+  .login-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #157AFE;
+  }
+  .login-logo h1 span{
+    color: #000;
+  }
+
+  .par{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .exam-p{
+    display: flex;
+    width: 60%;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .exam-o{
+    display: flex;
+    width: 40%;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .tb-titel span{
+    margin-left: 10px;
+    font-size: 13px;
+    color:rgba(0, 0, 0, 0.45);
+  }
+
+  .titel span{
+    margin-left: 10px;
+    font-size: 13px;
+    color:#fff;border-radius: 4px;
+    padding: 2px;
+    background-color: #ff0000;
+  }
+
+  .today-tag{
+    margin-left: 10px;
+    font-size: 13px;
+    color:#fff;border-radius: 4px;
+    padding: 2px;
+    background-color: #5100ff !important;
+  }
+  .tab-list-continer{
+    padding: 5px;
+  }
+  
+  
+  
