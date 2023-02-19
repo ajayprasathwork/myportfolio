@@ -408,5 +408,16 @@
   margin-left: 10px;
 }
 
+.w-card{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.mark-list tbody > tr:last-child { 
+  color: #000;
+  font-weight: bold;
+}
+
 
   

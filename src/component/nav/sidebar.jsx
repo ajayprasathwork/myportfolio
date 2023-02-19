@@ -15,7 +15,7 @@ const Sidebar = () => {
         return(
             <>
              <a  onClick={()=>usenavigate("/")}> <AiFillHome className='nav-icon'/>Dashboard</a>
-             <a> <HiAcademicCap className='nav-icon'/>Grades</a>
+             <a onClick={()=>usenavigate("/grade")}> <HiAcademicCap className='nav-icon'/>Grades</a>
              <a onClick={()=>usenavigate("/calender")}> <AiFillCalendar className='nav-icon'/>Calendar</a>
              <a> <MdViewArray className='nav-icon'/>Weekly View</a>
              <a > <MdAssignmentInd className='nav-icon'/>Assignments</a>

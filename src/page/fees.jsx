@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css'
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
 
-import { Button, Table, Alert, List, Dropdown, message, Row } from 'antd';
+import { Button, Table, Alert, List, Dropdown, Statistic, Col } from 'antd';
 const Fees = () => {
   const items = [
     {
@@ -111,6 +111,7 @@ const Fees = () => {
 
       </div>
       <div className='side-box'>
+    
         <List
           className='paymenthistory'
           size="small"
@@ -131,6 +132,7 @@ const Fees = () => {
             </List.Item>
           )}
         />
+         
       </div>
 
     </div>
