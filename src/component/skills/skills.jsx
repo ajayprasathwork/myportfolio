@@ -39,9 +39,7 @@ const skills = () => {
                 <div className='box item-1'>
                 <DiJava className='box-icon java'/>
                 </div>
-                <div className='box item-2'>
-                <DiAngularSimple className='box-icon ag'/>
-                </div>
+               
                 <div className='box item-3'>
                 <TbBrandReactNative className='box-icon react'/>
                 </div>

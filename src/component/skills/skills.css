@@ -53,4 +53,14 @@
 .ag{
     color: #dd1b16;
 }
+@media screen and (max-width: 850px) {
+    .row{
+        
+        flex-direction: column;
+        
+    }
+    .box{
+        margin-top: 5px;
+    }
+}
 
